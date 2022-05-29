@@ -1,0 +1,38 @@
+.calculadora{
+
+    
+
+}
+.teclas{
+    display:  flex;
+    flex-wrap: wrap;
+}
+
+
+.tecla{
+    padding: 10px;
+    font-size: 3em;
+    
+}
+
+.tecla-com{
+    font-size: 2em;
+    margin: auto 0;
+}
+
+#teclas-comando{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+#teclado-numerico{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: space-evenly;
+
+    
+}
+
