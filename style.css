@@ -4,6 +4,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color:lightblue;
 }
 
 .calculadora{
@@ -13,6 +14,7 @@ body{
     outline-color: black;
     padding: 2%;
     background-color: dimgrey;
+    border-radius: 4%;
 
 }
 
