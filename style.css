@@ -9,11 +9,25 @@ body{
 .calculadora{
 
     width: 300px;
+    outline: solid;
+    outline-color: lightslategrey;
+    padding: 2%;
 
 }
+
+.tecla{
+
+    width: 60px;
+    margin: 2px 0;
+    text-align: center;
+
+}
+
 .teclas{
     display:  flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
 
@@ -25,13 +39,16 @@ body{
 
 .tecla-com{
     font-size: 2em;
-    margin: auto 0;
+    margin: 2px 0;
+    flex-grow: 1;
 }
 
 #teclas-comando{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 8px;
     
     
 }
@@ -40,7 +57,13 @@ body{
     flex-wrap: wrap;
     width: 200px;
     justify-content: space-evenly;
+    padding-top: 2%;
+            
+}
 
-    
+#tela-calculadora{
+    width: 98%;
+    margin: 0;
+    font-size: 3em;
 }
 
