@@ -9,6 +9,8 @@ for(var i = 0; i < numeros.length; i++){
         if(this.value != 'C'){
             tela.value = this.value;
             
+        }else{
+            tela.value = '';
         }
     })
 }
