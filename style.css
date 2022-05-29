@@ -31,6 +31,10 @@ body{
 
 }
 
+.tecla:active{
+    background-color:sandybrown;
+}
+
 .teclas{
     display:  flex;
     flex-wrap: wrap;
@@ -84,17 +88,15 @@ body{
     text-align: end;
 }
 
-#tecla-igual{
+#tecla-igual, #tecla-apagar{
     background-color:slategrey;
     color:  white;
     box-shadow: inset 0 0 3px black;
     
 }
 
-#tecla-apagar{
-    background-color:slategrey;
-    color:  white;
-    box-shadow: inset 0 0 3px black;
-
-
+#tecla-igual:active, #tecla-apagar:active{
+    
 }
+
+
