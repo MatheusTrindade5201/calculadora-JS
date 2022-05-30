@@ -1,4 +1,5 @@
 var numeros = document.querySelectorAll('.tecla');
+var comandos = document.querySelectorAll('.tecla-com');
 
 var tela = document.querySelector('#tela-calculadora');
 
@@ -6,9 +7,6 @@ var numero1 = '';
 var numero2 = '';
 var operação = '';
 var resultado = '';
-tela.value = numero1
-
-
 
 //Escreve numeros na tela:
 for(var i = 0; i < numeros.length; i++){
@@ -19,6 +17,22 @@ for(var i = 0; i < numeros.length; i++){
         
     })
 }
+
+//Define a operação:
+for(var i = 0; i < comandos.length; i++){
+
+    comandos[i].addEventListener('click', function(){
+        if(this.value == '=' ){
+            resultado();
+        }else if(numero1 != ''){
+            operação = this.value;
+            console.log(operação);
+            atualizaTela();
+        }
+    })
+
+}
+
 
 function escreveNumero(botao, apagar){
     
