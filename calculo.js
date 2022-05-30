@@ -65,25 +65,28 @@ function limpaTela(botao, apagar){
 }
 
 function calcula(){
-    
-    converteNumero();
 
-    if(operação == '+'){
-        resultado = numero1 + numero2;
-        tela.value = resultado;
+    if(numero1 != '' && numero2 != ''){
+        converteNumero();
+
+        if(operação == '+'){
+            resultado = numero1 + numero2;
+            tela.value = resultado;
+        }
+        if(operação == '-'){
+            resultado = numero1 - numero2;
+            tela.value = resultado;
+        }
+        if(operação == '*'){
+            resultado = numero1 * numero2;
+            tela.value = resultado;
+        }
+        if(operação == '/'){
+            resultado = numero1 / numero2;
+            tela.value = resultado;
+        }
     }
-    if(operação == '-'){
-        resultado = numero1 - numero2;
-        tela.value = resultado;
-    }
-    if(operação == '*'){
-        resultado = numero1 * numero2;
-        tela.value = resultado;
-    }
-    if(operação == '/'){
-        resultado = numero1 / numero2;
-        tela.value = resultado;
-    }
+    
 
 }
 
