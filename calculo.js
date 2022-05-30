@@ -13,19 +13,24 @@ tela.value = numero1
 //Escreve numeros na tela:
 for(var i = 0; i < numeros.length; i++){
     numeros[i].addEventListener('click', function(){
-
+        
         limpaTela(this.value, 'C');
-
-        if(operação == '' && this.value != 'C'){
-            numero1 = numero1 + this.value;
-            atualizaTela();
-        }else if(operação != '' && this.value != 'C'){
-            numero2 = numero2 + this.value
-            atualizaTela();
-        }
+        escreveNumero(this.value, 'C');
+        
     })
 }
 
+function escreveNumero(botao, apagar){
+    
+    if(operação == '' && botao != apagar){
+        numero1 = numero1 + botao;
+        atualizaTela();
+    }else if(operação != '' && botao != apagar){
+        numero2 = numero2 + botao
+        atualizaTela();
+    }
+
+}
 
 function atualizaTela(){
 
@@ -45,3 +50,4 @@ function limpaTela(botao, apagar){
     atualizaTela();
 
 }
+

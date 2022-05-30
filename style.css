@@ -60,6 +60,10 @@ body{
     border-radius: 8px;
 }
 
+.tecla-com:active{
+    background-color:rgb(197, 50, 50);
+}
+
 #teclas-comando{
     display: flex;
     flex-direction: column;
@@ -96,7 +100,7 @@ body{
 }
 
 #tecla-igual:active, #tecla-apagar:active{
-    
+    background-color:rgb(32, 40, 49);
 }
 
 
