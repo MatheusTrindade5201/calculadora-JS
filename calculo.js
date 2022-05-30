@@ -23,10 +23,9 @@ for(var i = 0; i < comandos.length; i++){
 
     comandos[i].addEventListener('click', function(){
         if(this.value == '=' ){
-            resultado();
+            calcula();
         }else if(numero1 != ''){
             operação = this.value;
-            console.log(operação);
             atualizaTela();
         }
     })
@@ -63,5 +62,33 @@ function limpaTela(botao, apagar){
 
     atualizaTela();
 
+}
+
+function calcula(){
+    
+    converteNumero();
+
+    if(operação == '+'){
+        resultado = numero1 + numero2;
+        tela.value = resultado;
+    }
+    if(operação == '-'){
+        resultado = numero1 - numero2;
+        tela.value = resultado;
+    }
+    if(operação == '*'){
+        resultado = numero1 * numero2;
+        tela.value = resultado;
+    }
+    if(operação == '/'){
+        resultado = numero1 / numero2;
+        tela.value = resultado;
+    }
+
+}
+
+function converteNumero(){
+   numero1 = parseFloat(numero1);
+   numero2 = parseFloat(numero2);
 }
 
