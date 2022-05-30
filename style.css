@@ -90,6 +90,8 @@ body{
     border: solid 2px ;
     border-radius: 8px;
     text-align: end;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 #tecla-igual, #tecla-apagar{
